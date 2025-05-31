@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Where's Everyone",
+    "slug": "wheres-everyone",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f8f9fa"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourname.whereseveryone",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs your location to share it with others in real-time.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs your location to share it with others in real-time, even in the background."
+      },
+      "config": {
+        "googleMapsApiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#f8f9fa"
+      },
+      "package": "com.yourname.whereseveryone",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Where's Everyone to use your location."
+        }
+      ]
+    ]
+  }
+}

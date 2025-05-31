@@ -1,0 +1,12 @@
+{
+  "name": "wheres-everyone-mock-server",
+  "version": "1.0.0",
+  "description": "Mock WebSocket server for Where's Everyone app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node init && node index.js"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}
